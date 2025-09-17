@@ -11,6 +11,10 @@
     .container {
         background-color: lightpink;
     }
+    .container-big {
+        background-color: pink;
+    }
+
     .jumbotron {
         min-height: 200px;
     }
@@ -36,7 +40,11 @@ img {
 
 .container {
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
+}
+.container-big {
+    width: 70%;
+    margin: 0 auto;
 }
 
 /* commons */
@@ -86,4 +94,7 @@ nav {
 
 .jumbotron {
     background-color: var(--jumbotron-bg);
+}
+h1 {
+    font-size: 40px;
 }

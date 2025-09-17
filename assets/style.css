@@ -1,4 +1,4 @@
-.debug {
+.debu {
 
     * {
         border: 1px solid black;
@@ -9,14 +9,23 @@
     }
 
     .container {
-        background-color: lightpink;
+        background-color: rgb(255, 110, 132);
     }
+
     .container-big {
         background-color: pink;
     }
 
     .jumbotron {
-        min-height: 200px;
+        min-height: 100px;
+    }
+
+    h1 {
+        background-color: aqua;
+    }
+
+    div {
+        background-color: beige;
     }
 }
 
@@ -31,17 +40,25 @@ body {
     --btn-blue: #0061fe;
     --btn-blue-text: white;
     --jumbotron-bg: #b4d0e6;
-
-}
-
-img {
-    max-width: 100%;
 }
 
 .container {
     margin: 0 auto;
     width: 70%;
 }
+
+h1 {
+    width: 80%;
+    margin-left: 15%;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.margin-top-zero {
+    margin-top: 0;
+}
+
+
 .container-big {
     width: 70%;
     margin: 0 auto;
@@ -64,6 +81,20 @@ img {
     list-style: none;
 }
 
+.width-30 {
+    width: 30%;
+}
+
+.width-65 {
+    width: 65%;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* commons - end */
+
 .links {
     gap: 30px;
 }
@@ -74,12 +105,16 @@ a {
     }
 }
 
+.margin-negative-10 {
+    margin-bottom: -300px;
+}
+
 nav {
     margin: 0.5rem;
 
     & a {
-        color: var(--main-text-color);
         text-decoration: none;
+        color: var(--main-text-color);
     }
 }
 
@@ -89,12 +124,20 @@ nav {
     &.blue {
         background-color: var(--btn-blue);
         color: var(--btn-blue-text);
+        text-decoration: none;
     }
 }
 
 .jumbotron {
     background-color: var(--jumbotron-bg);
+    padding: 20px;
+
+    & img {
+        margin-left: -20px;
+        width: 100%;
+    }
 }
-h1 {
-    font-size: 40px;
+.arrow {
+    font-size: 25px;
+    margin-top: 20px;
 }

@@ -1,0 +1,89 @@
+.debug {
+
+    * {
+        border: 1px solid black;
+    }
+
+    header {
+        background-color: orange;
+    }
+
+    .container {
+        background-color: lightpink;
+    }
+    .jumbotron {
+        min-height: 200px;
+    }
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* colors */
+:root {
+    --main-text: black;
+    --buttons-text: white;
+    --btn-blue: #0061fe;
+    --btn-blue-text: white;
+    --jumbotron-bg: #b4d0e6;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* commons */
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.list-unstyled {
+    list-style: none;
+}
+
+.links {
+    gap: 30px;
+}
+
+a {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+nav {
+    margin: 0.5rem;
+
+    & a {
+        color: var(--main-text-color);
+        text-decoration: none;
+    }
+}
+
+.btn {
+    padding: 5px 10px;
+
+    &.blue {
+        background-color: var(--btn-blue);
+        color: var(--btn-blue-text);
+    }
+}
+
+.jumbotron {
+    background-color: var(--jumbotron-bg);
+}

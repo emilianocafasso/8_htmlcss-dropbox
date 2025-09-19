@@ -55,7 +55,8 @@ body {
     --btn-blue: #0061fe;
     --btn-blue-text: white;
     --jumbotron-bg: #b4d0e6;
-    --footer-bg: black;
+    --footer-bg: black; 
+    --border: #ddd;
 }
 
 .container {
@@ -74,6 +75,7 @@ section {
 img {
     margin-bottom: -5rem;
 }
+
 h1 {
     width: 80%;
     margin-left: 15%;
@@ -89,7 +91,7 @@ h3 {
     margin-bottom: 20px;
 }
 h4 {
-    margin: 2rem 0;
+    margin: 1.5rem 0;
 }
 
 .margin-top-zero {
@@ -170,6 +172,7 @@ a {
 
 .col-65 {
     width: 65%;
+    margin: 32px;
 }
 
 .col-5 {
@@ -188,12 +191,15 @@ nav {
 .btn {
     padding: 12px 10px;
     margin-top: 2em;
-
+    text-align: center;
     &.blue {
         background-color: var(--btn-blue);
         color: var(--btn-blue-text);
         text-decoration: none;
     }
+}
+.blue {
+    color: var(--btn-blue);
 }
 
 .jumbotron {
@@ -228,14 +234,11 @@ nav {
         justify-content: center;
         align-items: center;
         border-bottom: 1px solid #ddd;
+        padding: 12px;
     }
     .card-body {
         padding: 1rem;
     }
-}
-
-h2 {
-    margin-top: 0;
 }
 
 .border-bottom {
@@ -252,8 +255,19 @@ ul {
     li {
         display: flex;
         align-content: baseline;
-        padding-top: 12px;
+        padding: 1rem 0;
         margin-left: -3px;
-        justify-content: space-between;
     }
+}
+i {
+    margin-right: 5px;
+}
+.gray {
+    color: gray;
+}
+.bold {
+    font-weight: bold;
+}
+.col-100 .col-30 {
+    margin-right: 20px;
 }

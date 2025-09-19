@@ -1,15 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .debug {
 
     * {
         border: 1px dashed black;
     }
 
+
     header {
         background-color: orange;
     }
 
     .container {
-        height: 500px;
         background-color: rgb(255, 110, 132);
     }
 
@@ -28,12 +34,13 @@
     div {
         background-color: beige;
     }
+
     #teams {
         background-color: purple;
     }
 
     [class^="col-"] {
-        min-width: 30px;
+        min-height: 100px;
     }
 }
 
@@ -54,20 +61,35 @@ body {
 .container {
     margin: 0 auto;
     width: 55%;
+    padding-top: 2rem;
+}
+
+.margin {
+    margin: 3rem 0;
 }
 
 section {
     padding: 5rem;
 }
-
+img {
+    margin-bottom: -5rem;
+}
 h1 {
     width: 80%;
     margin-left: 15%;
     font-size: 60px;
     font-weight: 800;
 }
+
 h2 {
     font-size: 30px;
+    margin-bottom: 30px;
+}
+h3 {
+    margin-bottom: 20px;
+}
+h4 {
+    margin: 2rem 0;
 }
 
 .margin-top-zero {
@@ -91,6 +113,9 @@ h2 {
 
 .align-items-center {
     align-items: center;
+}
+.align-content-center {
+    align-content: center;
 }
 
 .list-unstyled {
@@ -123,14 +148,16 @@ a {
 }
 
 .row {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
 }
 
 .col-30 {
-    width: 30%
+    width: 33%
+}
+
+.col-3 {
+    width: calc(100% / 3 - 20px);
 }
 
 .col-100 {
@@ -144,14 +171,9 @@ a {
 .col-65 {
     width: 65%;
 }
+
 .col-5 {
     width: calc(100% / 5);
-}
-
-#plans {
-    &: col-100 {
-        padding: 20px;
-    }
 }
 
 nav {
@@ -164,7 +186,8 @@ nav {
 }
 
 .btn {
-    padding: 5px 10px;
+    padding: 12px 10px;
+    margin-top: 2em;
 
     &.blue {
         background-color: var(--btn-blue);
@@ -192,11 +215,45 @@ nav {
     padding-top: 30px;
 }
 
+.col-3 p {
+    margin-bottom: 1rem;
+
+}
+
+.card {
+    border: 1px solid #ddd;
+    margin-bottom: 3rem;
+    .card-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+    }
+    .card-body {
+        padding: 1rem;
+    }
+}
+
 h2 {
     margin-top: 0;
 }
+
+.border-bottom {
+    border-bottom: 1px solid #ddd;
+}
+
 footer {
     background-color: var(--footer-bg);
     padding: 2rem;
     color: var();
+}
+ul {
+    list-style: none;
+    li {
+        display: flex;
+        align-content: baseline;
+        padding-top: 12px;
+        margin-left: -3px;
+        justify-content: space-between;
+    }
 }

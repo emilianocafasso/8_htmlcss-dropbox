@@ -13,7 +13,7 @@
 
 </head>
 
-<body class="debu">
+<body class="dbug">
     <header>
         <nav class="d-flex justify-content-between">
 
@@ -43,10 +43,10 @@
             <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
             <div class="container-big d-flex wrap justify-content-between">
                 <div class="col-35">
-                    <p class="margin-top-zero">Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono
+                    <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono
                         accessibili dallo stesso posto. Dropbox Business è più comodo di uno spazio di archiviazione
                         sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
-                    <p><a class="btn blue" href="">Inizia la tua prova gratuita</a></p>
+                    <p class="margin "><a class="btn blue" href="">Inizia la tua prova gratuita</a></p>
                     <p>Annulla in qualsiasi momento</p>
                     <i class="arrow fa fa-arrow-down"></i>
                 </div>
@@ -58,38 +58,70 @@
         <section id="plans">
             <div class="container">
                 <h2>Trova il piano business che fa per te</h2>
-                <span><input type="radio">Fatturazione mansile <input type="radio">Fatturazione annuale</span>
+                <input type="radio" id="monthly"><label for="monthly">Fatturazione mansile</label>
+                <input type="radio" id="yearly"><label for="yearly">Fatturazione annuale</label>
             </div>
-            <div class="container padding">
+            <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col-30">
-                        <h2>Lorem, ipsum.</h2>
-                        <p class="price">€ 12.00 <span><br>/mese</span></p>
-                        <p>1 utente</p>
-                        <p>5 Tb di spazio di archiviazione sicuro</p>
-                        <p>Funzioni di produttività premium e condivisione file semplice e sicura</p>
-                        <p class="btn blue">Prova gratis per 30 giorni</p>
-                        <p>oppure <a href="">acquista ora</a></p>
+                    <div class="col-3 card">
+                        <p class="card-header">Singolo</p>
+                        <div class="card-body">
+                            <h3>Professional</h3>
+                            <p class="price">€ 12.00 <span><br>/mese</span></p>
+                            <ul class="features">
+                                <li><p>1 utente</p></li>
+                                <li><p>5 Tb di spazio di archiviazione sicuro</p></li>
+                                <li><p>Funzioni di produttività premium e condivisione file semplice e sicura</p></li>
+                            </ul>
+                            <p class="btn blue">Prova gratis per 30 giorni</p>
+                            <p>oppure <a href="">acquista ora</a></p>
+                            <h4>Punti salienti del piano</h4>
+                            <ul>
+                                <li><i class="fa fa-check"></i>Invia file fino a 100Gb con Dropbox Transfert</li>
+                                <li><i class="fa fa-check"></i>Cartelle offline su dispositivi mobili</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-30">
-                        <h2>Lorem, ipsum.</h2>
-                        <p class="price">€ 12.00 <span><br>/mese</span></p>
-                        <p>1 utente</p>
-                        <p>5 Tb di spazio di archiviazione sicuro</p>
-                        <p>Funzioni di produttività premium e condivisione file semplice e sicura</p>
-                        <p class="btn blue">Prova gratis per 30 giorni</p>
-                        <p>oppure <a href="">acquista ora</a></p>
+
+                    <div class="col-3 card">
+                        <p class="card-header">Team</p>
+                        <div class="card-body">
+                            <h3>Advanced</h3>
+                            <p class="price">€ 12.00 <span><br>/mese</span></p>
+                            <p>1 utente</p>
+                            <p>5 Tb di spazio di archiviazione sicuro</p>
+                            <p>Funzioni di produttività premium e condivisione file semplice e sicura</p>
+                            <p class="btn blue">Prova gratis per 30 giorni</p>
+                            <p>oppure <a href="">acquista ora</a></p>
+                            <h4>Punti salienti del piano</h4>
+                            <p>Nessun limite di spazio per i file</p>
+                            <p>Cartelle offline su dispositivi mobili</p>
+                            <p>Risparmio del 50% rispetto alle iscrizioni singole</p>
+                            <p>Possibilità di inserire nuovi membri del team</p>
+                            <p>Gestione dei permessi in base ai ruoli</p>
+                        </div>
                     </div>
-                    <div class="col-30">
-                        <h2>Lorem, ipsum.</h2>
-                        <p class="price">€ 12.00 <span><br>/mese</span></p>
-                        <p>1 utente</p>
-                        <p>5 Tb di spazio di archiviazione sicuro</p>
-                        <p>Funzioni di produttività premium e condivisione file semplice e sicura</p>
-                        <p class="btn blue">Prova gratis per 30 giorni</p>
-                        <p>oppure <a href="">acquista ora</a></p>
+                    <div class="col-3 card">
+                        <p class="card-header">Azienda</p>
+                        <div class="card-body">
+                            <h3>Enterprise</h3>
+                            <p class="price">€ 12.00 <span><br>/mese</span></p>
+                            <p>1 utente</p>
+                            <p>5 Tb di spazio di archiviazione sicuro</p>
+                            <p>Funzioni di produttività premium e condivisione file semplice e sicura</p>
+                            <p class="btn blue">Prova gratis per 30 giorni</p>
+                            <p>oppure <a href="">acquista ora</a></p>
+                            <h4>Punti salienti del piano</h4>
+                            <p>Cartelle offline su dispositivi mobili</p>
+                            <p>Servizio assistenza 24/h</p>
+                            <p>Possibilità di personalizzazione totale</p>
+                        </div>
                     </div>
-                    <div class="col-100"></div></span>
+
+                    <div class="col-100 card">
+                        <p class="card-header">Team</p>
+
+                    </div>
                 </div>
             </div>
         </section>
@@ -99,13 +131,13 @@
 
         <section id="operations">
             <div class="container">
-                <div class="dfex row justify-content-between">
-                    <div class="col-30"></div>
-                    <div class="col-30"></div>
-                    <div class="col-30"></div>
-                    <div class="col-30"></div>
-                    <div class="col-30"></div>
-                    <div class="col-30"></div>
+                <div class="row">
+                    <div class="col-33"></div>
+                    <div class="col-33"></div>
+                    <div class="col-33"></div>
+                    <div class="col-33"></div>
+                    <div class="col-33"></div>
+                    <div class="col-33"></div>
 
                 </div>
             </div>
